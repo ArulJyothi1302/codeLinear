@@ -457,8 +457,12 @@ export default function CB7Dashboard() {
                   className="
                   relative
                   w-full
+                  sm:max-w-sm
+                  xl:w-full
                   xl:flex-1
-                  min-h-[220px]
+                  h-[210px]
+                  sm:h-[240px]
+                  xl:min-h-[280px]
                   overflow-hidden
                   rounded-[28px]
                   bg-gradient-to-br
@@ -468,6 +472,8 @@ export default function CB7Dashboard() {
                   p-6
                   text-white
                   shadow-2xl
+                  mx-auto
+                  sm:mx-0
                   "
                 >
                   <div className="absolute -right-8 -bottom-8 h-32 w-32 rounded-full bg-white/10" />
@@ -475,23 +481,31 @@ export default function CB7Dashboard() {
 
                   <p className="text-xs opacity-70">PREMIUM ACCOUNT</p>
 
-                  <h4 className="mt-2 text-2xl font-semibold">Cloud Card</h4>
+                  <h4 className="mt-1 text-base sm:text-2xl font-semibold">
+                    Cloud Card
+                  </h4>
 
-                  <div className="mt-10 text-[20px] sm:text-[22px] tracking-[0.3em] sm:tracking-[0.35em] break-words">
+                  <div className="mt-2 sm:mt-10 text-[16px] sm:text-[22px] tracking-[0.15em] sm:tracking-[0.35em] break-words">
                     5789 •••• •••• 2847
                   </div>
 
-                  <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-between text-sm">
+                  <div className="mt-3 sm:mt-6 flex flex-row justify-between sm:flex-row sm:justify-between gap-4 sm:gap-6">
                     <div>
-                      <p className="opacity-70">Card Holder</p>
+                      <p className="opacity-70 text-xs sm:text-sm">
+                        Card Holder
+                      </p>
 
-                      <p>Jane Smith</p>
+                      <p className="text-xs sm:text-base font-medium">
+                        Jane Smith
+                      </p>
                     </div>
 
                     <div>
-                      <p className="opacity-70">Expiry</p>
+                      <p className="opacity-70 text-xs sm:text-sm">Expiry</p>
 
-                      <p>12 / 27</p>
+                      <p className="text-xs sm:text-base font-medium">
+                        12 / 27
+                      </p>
                     </div>
                   </div>
                 </motion.div>
