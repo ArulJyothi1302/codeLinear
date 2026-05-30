@@ -458,7 +458,7 @@ export default function CB7Dashboard() {
                   relative
                   w-full
                   xl:flex-1
-                  h-[220px]
+                  min-h-[220px]
                   overflow-hidden
                   rounded-[28px]
                   bg-gradient-to-br
@@ -477,21 +477,11 @@ export default function CB7Dashboard() {
 
                   <h4 className="mt-2 text-2xl font-semibold">Cloud Card</h4>
 
-                  <div className="mt-10 text-[22px] tracking-[5px]">
+                  <div className="mt-10 text-[20px] sm:text-[22px] tracking-[0.3em] sm:tracking-[0.35em] break-words">
                     5789 •••• •••• 2847
                   </div>
 
-                  <div
-                    className="
-                    absolute
-                    bottom-6
-                    left-6
-                    right-6
-                    flex
-                    justify-between
-                    text-sm
-                    "
-                  >
+                  <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-between text-sm">
                     <div>
                       <p className="opacity-70">Card Holder</p>
 
