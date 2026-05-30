@@ -6,11 +6,9 @@ import Solutions from "../components/solution";
 export default function Solution() {
   return (
     <>
-      <Navbar/>
+      <Navbar />
       <Hero />
       <Solutions />
-      <CB7Section />
-      
     </>
   );
 }

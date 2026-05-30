@@ -337,6 +337,7 @@ export default function CB7Dashboard() {
                 <div
                   key={item.label}
                   className={`
+                    relative
                     flex
                     flex-col
                     items-center
@@ -344,14 +345,16 @@ export default function CB7Dashboard() {
                     gap-2
                     h-14
                     rounded-2xl
+                    border-l-4
                     transition-all
                     duration-300
                     cursor-pointer
+                    overflow-hidden
 
                     ${
                       item.active
-                        ? "bg-[#3B82F6] text-white"
-                        : "text-gray-500 hover:bg-white/5 hover:text-white"
+                        ? "bg-[#3B82F6] text-white border-blue-500"
+                        : "text-gray-500 border-transparent hover:bg-white/5 hover:text-white hover:border-blue-500"
                     }
                   `}
                 >
